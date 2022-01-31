@@ -1,0 +1,480 @@
+/* color ---
+#331832 dark
+#D81E5B red
+#FBFFF1 white
+#F7EDF0 white for skill
+*/
+
+/* fonts --- 
+font-family: 'Anton', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif; *
+font-family: 'Raleway', sans-serif; * 
+font-family: 'Roboto', sans-serif; * 
+font-family: 'Roboto Slab', serif; 
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin: 0 auto;
+    width: 1120px;
+}
+ul{
+    list-style: none;
+}
+body{
+    background-color: #FBFFF1;
+}
+
+/* main start */
+#banner{
+    padding: 200px 0;
+    background-image: url("../images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    position: relative;
+}
+#banner nav{
+    background: #331832;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#banner nav .container .nav-control{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#banner nav .container .nav-control .menu-logo{
+    width: 20%;
+    /* background: green; */
+}
+#banner nav .container .nav-control .menu-logo span{
+    font-size: 2rem;
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 800;
+    color: #FBFFF1;
+    letter-spacing: 2px;
+    padding: 10px 0;
+}
+#banner nav .container .nav-control .menu-bar{
+    width: 80%;
+    /* background: red; */
+}
+#banner nav .container .nav-control .menu-bar ul{
+    width: 100%;
+    /* background: gray; */
+    text-align: right;
+}
+#banner nav .container .nav-control .menu-bar ul li{
+    display: inline-block;
+}
+#banner nav .container .nav-control .menu-bar ul li a{
+    text-decoration: none;
+    color: #FBFFF1;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 40px;
+    /* background: blue; */
+    display: block;
+    font-size: 1rem;
+    line-height: 50px;
+}
+#banner nav .container .nav-control .menu-bar ul li a:hover{
+    color: #D81E5B;
+}
+#banner .banner-content{
+    width: 100%;
+    /* background: red; */
+    text-align: center;
+    padding-top: 150px;
+}
+#banner .banner-content h1{
+    color: #331832;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 5px;
+}
+#banner .banner-content h4{
+    color: #331832;
+    font-family: 'Roboto', sans-serif;
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 8px;
+}
+/* main end */
+
+/* about start */
+#about{
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+#about .container .about-control{
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.308);
+    display: flex;
+    justify-content: space-between;
+}
+#about .container .about-control .about-img{
+    width: 40%;
+    /* background: red; */
+    background-image: url("../images/user.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#about .container .about-control .about-written{
+    box-sizing: border-box;
+    padding: 30px;
+    text-align: left;
+    width: 60%;
+}
+#about .container .about-control .about-written h2{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    color: #D81E5B;
+    text-transform: uppercase;
+}
+#about .container .about-control .about-written h3{
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    color: #331832;
+    padding-top: 20px;
+}
+#about .container .about-control .about-written h4{
+    font-size: .8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    color: #3318327a;
+    padding: 5px 0;
+    letter-spacing: 8px;
+}
+#about .container .about-control .about-written p{
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: #331832;
+    text-justify: auto;
+}
+/* about end */
+
+/* skill start */
+#skill{
+    padding: 40px 0;
+}
+#skill .container .skill-head{
+    padding: 20px 0;
+    background: #331832;
+}
+#skill .container .skill-head h2{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    color: #FBFFF1;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+#skill .container .skill-body{
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.308);
+    display: flex;
+    justify-content: space-between;
+}
+#skill .container .skill-body .skill-body-item{
+    width: 31%;
+    /* background: red; */
+    box-sizing: border-box;
+    padding: 10px;
+}
+#skill .container .skill-body .skill-body-item ul{
+    width: 100%;
+}
+#skill .container .skill-body .skill-body-item ul li{
+    color: #331832;
+    font-size: .8rem;
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0;
+}
+#skill .container .skill-body .skill-body-item ul li:first-child{
+    color: #D81E5B;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    padding-bottom: 10px;
+    
+}
+#skill .container .skill-body .skill-body-item ul li span:nth-child(1){
+    display: block;
+    width: 30%;
+    /* background: green; */
+}
+#skill .container .skill-body .skill-body-item ul li span:nth-child(2){
+    display: block;
+    width: 70%;
+    background: #F7EDF0;
+}#skill .container .skill-body .skill-body-item ul li span:nth-child(2) div{
+    height: 100%;
+    /* width: 70%; */
+    background: #D81E5B;
+}
+/* customized skill width */
+.w-10{
+    width: 10%;
+}
+.w-20{
+    width: 20%;
+}
+.w-30{
+    width: 30%;
+}
+.w-40{
+    width: 40%;
+}
+.w-50{
+    width: 50%;
+}
+.w-60{
+    width: 60%;
+}
+.w-70{
+    width: 70%;
+}
+.w-80{
+    width: 80%;
+}
+.w-90{
+    width: 90%;
+}
+.w-100{
+    width: 100%;
+}
+/* skill end */
+
+/* portfolio start */
+#portfolio{
+    padding: 40px 0;
+}
+#portfolio > h2{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    color: #D81E5B;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+#portfolio .container .portfolio-counter{
+    width: 100%;
+    padding: 50px 0;
+    background: #331832;
+    color: #FBFFF1;
+    display: flex;
+    justify-content: space-evenly;
+}
+#portfolio .container .portfolio-counter .portfolio-counter-item{
+    width: 31%;
+    text-align: center;
+}
+#portfolio .container .portfolio-counter .portfolio-counter-item p{
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+#portfolio .container .portfolio-counter .portfolio-counter-item h2{
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+#portfolio .container .project-container{
+    width: 100%;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.308);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 10px;
+}
+#portfolio .container .project-container .project-item{
+    width: 22%;
+    height: 150px;
+    background: red;
+    position: relative;
+    margin-bottom: 30px;
+}
+#portfolio .container .project-container .project-item .project-screenshot{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#portfolio .container .project-container .project-item .project-content{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+#portfolio .container .project-container .project-item:hover .project-content{
+    display: block;
+}
+#portfolio .container .project-container .project-item .project-content h4{
+    color: #FBFFF1;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 125px;
+    text-align: center;
+}
+/* portfolio end */
+
+/* contact start */
+#contact{
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+#contact .container .contact-control{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.308);
+}
+#contact .container .contact-control .contact-img-wall{
+    width: 40%;
+    background: red;
+}
+#contact .container .contact-control .contact-form-wall{
+    width: 60%;
+    /* height: 10px; */
+    box-sizing: border-box;
+    padding: 50px;
+}
+#contact .container .contact-control .contact-form-wall h2{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    color: #D81E5B;
+    text-transform: uppercase;
+}
+#contact .container .contact-control .contact-form-wall form{
+    margin-top: 20px;
+    width: 80%;
+}
+#contact .container .contact-control .contact-form-wall form input[type=text],
+#contact .container .contact-control .contact-form-wall form textarea{
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+    margin: 10px 0;
+    color: #331832;
+}
+#contact .container .contact-control .contact-form-wall form input[type=submit],
+#contact .container .contact-control .contact-form-wall form input[type=reset]{
+    background: transparent;
+    border: 3px solid rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+    padding: 10px 30px;
+    color: #331832;
+    display: inline-block;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+#contact .container .contact-control .contact-form-wall form input[type=submit]:hover,
+#contact .container .contact-control .contact-form-wall form input[type=reset]:hover{
+    background: #D81E5B;
+    border: 3px solid transparent;
+    color: #F7EDF0;
+}
+/* contact end */
+
+/* footer start */
+footer{
+    background: #331832;
+}
+footer .footer-upper{
+    padding: 50px 0;
+}
+footer .container .footer-control{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+footer .container .footer-control .content-bar{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+footer .container .footer-control .content-bar .content-bar-logo{
+    width: 20%;
+    color: #D81E5B;
+    font-size: 2.5rem;
+    text-align: center;
+}
+footer .container .footer-control .content-bar .content-bar-des{
+    width: 80%;
+}
+footer .container .footer-control .content-bar .content-bar-des h2{
+    color: #F7EDF0;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    padding-bottom: 10px;  
+}
+footer .container .footer-control .content-bar .content-bar-des p{
+    color: #F7EDF0;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;  
+}
+footer .container .footer-control .content-bar:nth-child(3) .content-bar-des ul li{
+    display: inline-block;
+    padding: 5px 10px;
+}
+footer .container .footer-control .content-bar:nth-child(3) .content-bar-des ul li a{
+    text-decoration: none;
+    color: #D81E5B;
+    font-size: 30px;
+}
+footer .container .footer-control .content-bar:nth-child(3) .content-bar-des ul li a:hover{
+    color: #F7EDF0;
+}
+footer hr{
+    border: 2px solid #F7EDF0;
+}
+footer .footer-down{
+    padding: 10px;
+    text-align: center;
+    color: #FBFFF1;
+    font-family: 'Roboto', sans-serif;
+}
+/* footer end */
+
+
+
+
+
