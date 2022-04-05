@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(150, 46, 248);
+}
+form{
+    padding: 20px;
+    margin-top: 40px;
+    background-color: rgb(241, 255, 255);
+    border-radius: 4px;
+}
+.form-group{
+    position: relative;
+}
+.form-group{
+    position: relative;
+}
+
+.fa-circle-exclamation, .fa-circle-check {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    display: none;
+}
