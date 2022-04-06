@@ -3,7 +3,9 @@ const name = document.getElementById("name-id");
 const username = document.getElementById("uname-id");
 const pass = document.getElementById("pass-id");
 const re_pass = document.getElementById("re-pass-id");
-const gender = document.getElementById("gender-id-1");
+const gender_1 = document.getElementById("gender-id-1");
+const gender_2 = document.getElementById("gender-id-2");
+const gender_3 = document.getElementById("gender-id-3");
 
 name.addEventListener("change", function(e){
     let errorMessage = "";
@@ -15,16 +17,25 @@ name.addEventListener("change", function(e){
         
     }else if(name.value.length > 30){
         errorMessage = "The length of name can not exceed 30 characters";
-        
+        //4 right; 3 wrong
     }else{
         name.parentNode.children[2].innerHTML = "";
-        name.parentNode.children[3].classList.toggle("d-block");
-        name.parentNode.children[4].classList.toggle("d-block");
+        if(name.parentNode.children[3].classList.contains("d-block")){
+            name.parentNode.children[3].classList.remove("d-block");
+            name.parentNode.children[3].classList.add("d-none");
+            name.parentNode.children[4].classList.add("d-block");
+        }
+        name.parentNode.children[4].classList.add("d-block");
     }
     
     if(errorMessage){
         name.parentNode.children[2].innerHTML = errorMessage;
-        name.parentNode.children[3].classList.toggle("d-block");
+        if(name.parentNode.children[4].classList.contains("d-block")){
+            name.parentNode.children[4].classList.remove("d-block");
+            name.parentNode.children[4].classList.add("d-none");
+            name.parentNode.children[3].classList.add("d-block");
+        }
+        name.parentNode.children[3].classList.add("d-block");
         errorMessage = "";
     }
 });
@@ -41,13 +52,22 @@ username.addEventListener("change", function(e){
         errorMessage = "Username must follow the special pattern";
     }else{
         username.parentNode.children[2].innerHTML = "";
-        username.parentNode.children[3].classList.toggle("d-block");
-        username.parentNode.children[4].classList.toggle("d-block");
+        if(username.parentNode.children[3].classList.contains("d-block")){
+            username.parentNode.children[3].classList.remove("d-block");
+            username.parentNode.children[3].classList.add("d-none");
+            username.parentNode.children[4].classList.add("d-block");
+        }
+        username.parentNode.children[4].classList.add("d-block");
     }
     
     if(errorMessage){
         username.parentNode.children[2].innerHTML = errorMessage;
-        username.parentNode.children[3].classList.toggle("d-block");
+        if(username.parentNode.children[4].classList.contains("d-block")){
+            username.parentNode.children[4].classList.remove("d-block");
+            username.parentNode.children[4].classList.add("d-none");
+            username.parentNode.children[3].classList.add("d-block");
+        }
+        username.parentNode.children[3].classList.add("d-block");
         errorMessage = "";
     }
 });
@@ -68,13 +88,22 @@ pass.addEventListener("change", function(e){
         errorMessage = "Password should contain some special character";
     }else{
         pass.parentNode.children[2].innerHTML = "";
-        pass.parentNode.children[3].classList.toggle("d-block");
-        pass.parentNode.children[4].classList.toggle("d-block");
+        if(pass.parentNode.children[3].classList.contains("d-block")){
+            pass.parentNode.children[3].classList.remove("d-block");
+            pass.parentNode.children[3].classList.add("d-none");
+            pass.parentNode.children[4].classList.add("d-block");
+        }
+        pass.parentNode.children[4].classList.add("d-block");
     }
     
     if(errorMessage){
         pass.parentNode.children[2].innerHTML = errorMessage;
-        pass.parentNode.children[3].classList.toggle("d-block");
+        if(pass.parentNode.children[4].classList.contains("d-block")){
+            pass.parentNode.children[4].classList.remove("d-block");
+            pass.parentNode.children[4].classList.add("d-none");
+            pass.parentNode.children[3].classList.add("d-block");
+        }
+        pass.parentNode.children[3].classList.add("d-block");
         errorMessage = "";
     }
 });
@@ -89,13 +118,22 @@ re_pass.addEventListener("change", function(e){
         
     }else{
         re_pass.parentNode.children[2].innerHTML = "";
-        re_pass.parentNode.children[3].classList.toggle("d-block");
-        re_pass.parentNode.children[4].classList.toggle("d-block");
+        if(re_pass.parentNode.children[3].classList.contains("d-block")){
+            re_pass.parentNode.children[3].classList.remove("d-block");
+            re_pass.parentNode.children[3].classList.add("d-none");
+            re_pass.parentNode.children[4].classList.add("d-block");
+        }
+        re_pass.parentNode.children[4].classList.add("d-block");
     }
     
     if(errorMessage){
         re_pass.parentNode.children[2].innerHTML = errorMessage;
-        re_pass.parentNode.children[3].classList.toggle("d-block");
+        if(re_pass.parentNode.children[4].classList.contains("d-block")){
+            re_pass.parentNode.children[4].classList.remove("d-block");
+            re_pass.parentNode.children[4].classList.add("d-none");
+            re_pass.parentNode.children[3].classList.add("d-block");
+        }
+        re_pass.parentNode.children[3].classList.add("d-block");
         errorMessage = "";
     }
 });
